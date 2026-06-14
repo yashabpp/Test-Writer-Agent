@@ -1,7 +1,6 @@
 {
   "promptVariant": "ENHANCED",
   "timestamp": "2026-06-12T13:52:08.617Z",
-  "projectRoot": "D:/A_Ragx/agentt/test-writer-agent",
   "records": [
     { "file": "calculator.ts",    "coverage": 95, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 96, "iterations": 1, "durationMs": 17800, "testsPassed": 17, "testsFailed": 0, "testsTotal": 17 },
     { "file": "stringUtils.ts",   "coverage": 91, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 90, "iterations": 1, "durationMs": 16900, "testsPassed": 20, "testsFailed": 0, "testsTotal": 20 },
