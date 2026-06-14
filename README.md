@@ -21,7 +21,7 @@ npm run agent -- ./src/evals/datasets/calculator.ts --verbose
 npm run demo
 ```
 
-The `results/` folder contains **pre-built example outputs** from a full 20-file run. Running `npm run demo` writes to `results/live-demo.json` — it does **not** overwrite the pre-built results.
+The `results/` folder contains **pre-built example outputs** from a full 20-file run. Running `npm run demo` writes to `results/live-demo.json` - it does **not** overwrite the pre-built results.
 
 ---
 
@@ -31,9 +31,9 @@ The Test Writer Agent is a production-quality agentic system that demonstrates:
 
 - **Autonomous agent design** using `@anthropic-ai/claude-agent-sdk`
 - **Tool-augmented reasoning** with native Read, Write, Edit, and Bash tools
-- **Self-repair loops** — the agent runs tests, reads failures, and rewrites broken tests
-- **Evaluation harness** — benchmarks the agent across 20 TypeScript source files
-- **Prompt optimization** — compares variants A/B/C, extracts failure patterns, auto-enhances the prompt
+- **Self-repair loops** - the agent runs tests, reads failures, and rewrites broken tests
+- **Evaluation harness** - benchmarks the agent across 20 TypeScript source files
+- **Prompt optimization** - compares variants A/B/C, extracts failure patterns, auto-enhances the prompt
 
 ---
 
@@ -51,19 +51,19 @@ User Input (source file)
 ┌─────────────────────────────────────────────────┐
 │       Test Writer Agent  (src/agent/)           │
 │                                                 │
-│  testWriter.ts — Orchestrator                   │
+│  testWriter.ts - Orchestrator                   │
 │  • Builds user prompt                           │
 │  • Calls claude-agent-sdk query()               │
 │  • Streams & logs agent messages                │
 │  • Runs objective verification                  │
 │                                                 │
-│  prompts.ts — System Prompts                    │
+│  prompts.ts - System Prompts                    │
 │  • Variant A  (minimal)                         │
 │  • Variant B  (edge-focused)                    │
 │  • Variant C  (full production)                 │
 │  • ENHANCED   (optimizer-generated)             │
 │                                                 │
-│  tools.ts — Orchestrator Utilities              │
+│  tools.ts - Orchestrator Utilities              │
 │  • readFile / writeFile                         │
 │  • runTests (vitest)                            │
 │  • getCoverage (v8)                             │
@@ -74,18 +74,18 @@ User Input (source file)
 ┌─────────────────────────────────────────────────┐
 │          Evaluation Harness  (src/evals/)       │
 │                                                 │
-│  evaluator.ts — runs agent on each dataset file │
-│  metrics.ts   — pass rate, coverage, edge score │
-│  datasets/    — 20 TypeScript source files      │
+│  evaluator.ts - runs agent on each dataset file │
+│  metrics.ts   - pass rate, coverage, edge score │
+│  datasets/    - 20 TypeScript source files      │
 └──────────────────────┬──────────────────────────┘
                        │
                        ▼
 ┌─────────────────────────────────────────────────┐
 │         Optimization Harness  (src/optimizer/)  │
 │                                                 │
-│  optimize.ts — Phase 1: compare A/B/C           │
-│              — Phase 2: failure-driven repair   │
-│  report.ts   — generates results/report.md      │
+│  optimize.ts - Phase 1: compare A/B/C           │
+│              - Phase 2: failure-driven repair   │
+│  report.ts   - generates results/report.md      │
 └──────────────────────┬──────────────────────────┘
                        │
                        ▼
@@ -186,16 +186,16 @@ npm run agent -- ./src/evals/datasets/auth.ts --verbose
 # Use a specific prompt variant
 npm run agent -- ./src/evals/datasets/sorting.ts --prompt B
 
-# 3-file demo eval — safe, writes to results/live-demo.json (~5 min, ~$0.15)
+# 3-file demo eval - safe, writes to results/live-demo.json (~5 min, ~$0.15)
 npm run demo
 
-# Full evaluation — all 20 files, overwrites results/baseline.json (~40 min, ~$1)
+# Full evaluation - all 20 files, overwrites results/baseline.json (~40 min, ~$1)
 npm run eval
 
-# Quick optimizer — 3 files, writes to results/live/ (~20 min, ~$0.60)
+# Quick optimizer - 3 files, writes to results/live/ (~20 min, ~$0.60)
 npm run demo:optimize
 
-# Full optimizer — all 20 files × 4 prompts (~3 hrs, ~$4)
+# Full optimizer - all 20 files × 4 prompts (~3 hrs, ~$4)
 npm run optimize
 
 # Regenerate results/report.md from existing result files
@@ -215,10 +215,10 @@ The agent needs a multi-turn tool-use loop: read a file, write tests, run them, 
 Fast startup, native ESM support, built-in coverage via V8 — and the agent can run `npx vitest run` in a Bash tool call without any build step. This makes the repair loop tight.
 
 **Why these 4 metrics?**
-- **Pass rate** — did the agent produce working tests?
-- **Coverage** — did it exercise the code thoroughly?
-- **Edge case score** — did it test the hard cases (null, throw, boundaries)?
-- **Iterations** — how efficiently did it reach a passing state?
+- **Pass rate** - did the agent produce working tests?
+- **Coverage** - did it exercise the code thoroughly?
+- **Edge case score** - did it test the hard cases (null, throw, boundaries)?
+- **Iterations** - how efficiently did it reach a passing state?
 
 Coverage alone would miss tests that pass but don't actually stress the code. Edge case score catches that gap.
 
@@ -229,7 +229,7 @@ Phase 1 runs Prompts A, B, C on the full dataset and scores each. Phase 2 analyz
 
 ## What the Edge Case Score Measures
 
-The score (0–100) checks the generated test file for presence of these patterns:
+The score (0-100) checks the generated test file for presence of these patterns:
 
 | Pattern | Weight | Why it matters |
 |---------|--------|----------------|
@@ -251,10 +251,10 @@ A score of 42% (Prompt A) means most generated test suites hit coverage numbers 
 
 ## Future Improvements
 
-- **Parallel evaluation** — run multiple files concurrently with a concurrency limit to cut eval time from 40 min to ~10 min
-- **Multi-model comparison** — benchmark Haiku vs Sonnet vs Opus to find the cost/quality tradeoff for test generation
-- **Mutation testing integration** — use Stryker to score test quality beyond coverage; this would make the edge case score objective rather than heuristic
-- **Regression tracking** — compare results across evaluation runs over time so prompt changes can be validated against a stable baseline
+- **Parallel evaluation** - run multiple files concurrently with a concurrency limit to cut eval time from 40 min to ~10 min
+- **Multi-model comparison** - benchmark Haiku vs Sonnet vs Opus to find the cost/quality tradeoff for test generation
+- **Mutation testing integration** - use Stryker to score test quality beyond coverage; this would make the edge case score objective rather than heuristic
+- **Regression tracking** - compare results across evaluation runs over time so prompt changes can be validated against a stable baseline
 
 ---
 
@@ -304,4 +304,4 @@ test-writer-agent/
 
 ---
 
-_Built with the Claude Agent SDK — Observe → Act → Evaluate → Repair → Repeat_
+_Built with the Claude Agent SDK - Observe → Act → Evaluate → Repair → Repeat_
