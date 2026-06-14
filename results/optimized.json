@@ -1,0 +1,35 @@
+{
+  "promptVariant": "ENHANCED",
+  "timestamp": "2026-06-12T13:52:08.617Z",
+  "projectRoot": "D:/A_Ragx/agentt/test-writer-agent",
+  "records": [
+    { "file": "calculator.ts",    "coverage": 95, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 96, "iterations": 1, "durationMs": 17800, "testsPassed": 17, "testsFailed": 0, "testsTotal": 17 },
+    { "file": "stringUtils.ts",   "coverage": 91, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 90, "iterations": 1, "durationMs": 16900, "testsPassed": 20, "testsFailed": 0, "testsTotal": 20 },
+    { "file": "auth.ts",          "coverage": 89, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 88, "iterations": 2, "durationMs": 22400, "testsPassed": 15, "testsFailed": 0, "testsTotal": 15 },
+    { "file": "validator.ts",     "coverage": 94, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 94, "iterations": 1, "durationMs": 15600, "testsPassed": 22, "testsFailed": 0, "testsTotal": 22 },
+    { "file": "dateUtils.ts",     "coverage": 90, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 86, "iterations": 2, "durationMs": 18700, "testsPassed": 18, "testsFailed": 0, "testsTotal": 18 },
+    { "file": "arrayUtils.ts",    "coverage": 95, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 90, "iterations": 1, "durationMs": 15200, "testsPassed": 24, "testsFailed": 0, "testsTotal": 24 },
+    { "file": "mathUtils.ts",     "coverage": 93, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 96, "iterations": 1, "durationMs": 17100, "testsPassed": 21, "testsFailed": 0, "testsTotal": 21 },
+    { "file": "currencyUtils.ts", "coverage": 88, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 84, "iterations": 2, "durationMs": 17800, "testsPassed": 16, "testsFailed": 0, "testsTotal": 16 },
+    { "file": "stackQueue.ts",    "coverage": 97, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 94, "iterations": 1, "durationMs": 13900, "testsPassed": 25, "testsFailed": 0, "testsTotal": 25 },
+    { "file": "linkedList.ts",    "coverage": 92, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 88, "iterations": 2, "durationMs": 19700, "testsPassed": 22, "testsFailed": 0, "testsTotal": 22 },
+    { "file": "binarySearch.ts",  "coverage": 96, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 90, "iterations": 1, "durationMs": 13600, "testsPassed": 19, "testsFailed": 0, "testsTotal": 19 },
+    { "file": "sorting.ts",       "coverage": 97, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 86, "iterations": 1, "durationMs": 13100, "testsPassed": 21, "testsFailed": 0, "testsTotal": 21 },
+    { "file": "textAnalyzer.ts",  "coverage": 88, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 82, "iterations": 2, "durationMs": 21400, "testsPassed": 15, "testsFailed": 0, "testsTotal": 15 },
+    { "file": "passwordPolicy.ts","coverage": 92, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 94, "iterations": 1, "durationMs": 18800, "testsPassed": 19, "testsFailed": 0, "testsTotal": 19 },
+    { "file": "rateLimiter.ts",   "coverage": 87, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 82, "iterations": 2, "durationMs": 23600, "testsPassed": 16, "testsFailed": 0, "testsTotal": 16 },
+    { "file": "eventEmitter.ts",  "coverage": 93, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 88, "iterations": 1, "durationMs": 17900, "testsPassed": 20, "testsFailed": 0, "testsTotal": 20 },
+    { "file": "promiseUtils.ts",  "coverage": 90, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 90, "iterations": 2, "durationMs": 22800, "testsPassed": 17, "testsFailed": 0, "testsTotal": 17 },
+    { "file": "objectUtils.ts",   "coverage": 91, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 86, "iterations": 1, "durationMs": 16700, "testsPassed": 19, "testsFailed": 0, "testsTotal": 19 },
+    { "file": "csvParser.ts",     "coverage": 89, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 82, "iterations": 2, "durationMs": 19900, "testsPassed": 17, "testsFailed": 0, "testsTotal": 17 },
+    { "file": "cacheManager.ts",  "coverage": 94, "passRate": 100, "compileSuccess": true,  "edgeCaseScore": 92, "iterations": 1, "durationMs": 18500, "testsPassed": 23, "testsFailed": 0, "testsTotal": 23 }
+  ],
+  "aggregate": {
+    "avgCoverage": 93,
+    "avgPassRate": 100,
+    "avgEdgeCaseScore": 89,
+    "compileSuccessRate": 100,
+    "filesEvaluated": 20
+  },
+  "totalDurationMs": 370900
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-06-12T13:52:08.617Z",
+  "baseline": {
+    "avgCoverage": 89,
+    "avgPassRate": 99,
+    "avgEdgeCaseScore": 83,
+    "compileSuccessRate": 100,
+    "filesEvaluated": 20
+  },
+  "optimized": {
+    "avgCoverage": 93,
+    "avgPassRate": 100,
+    "avgEdgeCaseScore": 89,
+    "compileSuccessRate": 100,
+    "filesEvaluated": 20
+  },
+  "delta": {
+    "coverage": 4,
+    "passRate": 1,
+    "edgeCaseScore": 6,
+    "compileSuccessRate": 0
+  },
+  "failurePatternsFound": 3,
+  "enhancedPromptPreview": "...Based on observed failure patterns, always ensure:\n- Division by zero: If any function divides, test divisor = 0 explicitly.\n- Async/Promise rejection: For every async function, test the rejection path.\n- Null-reference errors: Test null and undefined for every parameter that accepts an object.",
+  "improvementSummary": "Failure-driven optimization improved agent performance.\nCoverage: 89% → 93% (+4%)\nPass rate: 99% → 100% (+1%)\nEdge case score: 83 → 89 (+6)\nPatterns addressed: 3"
+}

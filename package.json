@@ -1,0 +1,32 @@
+{
+  "name": "test-writer-agent",
+  "version": "1.0.0",
+  "description": "Autonomous Test Writer Agent powered by Claude Agent SDK",
+  "type": "module",
+  "main": "dist/cli.js",
+  "scripts": {
+    "agent": "tsx src/cli.ts",
+    "eval": "tsx src/evals/evaluator.ts",
+    "optimize": "tsx src/optimizer/optimize.ts",
+    "report": "tsx src/optimizer/report.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "demo": "tsx src/evals/evaluator.ts --sample 3 --output results/live-demo.json",
+    "demo:optimize": "tsx src/optimizer/optimize.ts --sample 3"
+  },
+  "keywords": ["agent", "claude", "testing", "typescript", "ai"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.175",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@vitest/coverage-v8": "^2.0.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}

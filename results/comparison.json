@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-12T10:14:55.382Z",
+  "variants": {
+    "A": {
+      "avgCoverage": 64,
+      "avgPassRate": 61,
+      "avgEdgeCaseScore": 42,
+      "compileSuccessRate": 85,
+      "filesEvaluated": 20
+    },
+    "B": {
+      "avgCoverage": 75,
+      "avgPassRate": 76,
+      "avgEdgeCaseScore": 66,
+      "compileSuccessRate": 90,
+      "filesEvaluated": 20
+    },
+    "C": {
+      "avgCoverage": 89,
+      "avgPassRate": 99,
+      "avgEdgeCaseScore": 83,
+      "compileSuccessRate": 100,
+      "filesEvaluated": 20
+    }
+  },
+  "winner": "C",
+  "analysis": "Winner: Prompt C\n\nResults:\n  Prompt A: avgCoverage=64% avgPassRate=61% avgEdgeScore=42 compileSuccess=85%\n  Prompt B: avgCoverage=75% avgPassRate=76% avgEdgeScore=66 compileSuccess=90%\n  Prompt C: avgCoverage=89% avgPassRate=99% avgEdgeScore=83 compileSuccess=100%"
+}
